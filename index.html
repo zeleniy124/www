@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/star-wars');
+        
+        @font-face {
+            font-family: 'Bomb';
+            src: url('RamadhanMubarok-Regular.otf') format('opentype');
+        }
+        
+        button {
+            background-color: black;
+            color: white;
+            border: 2px solid black;
+            border-radius: 8px;
+            width: 400px;
+            height: 100px !important;
+            font-size: 30px;
+            font-family: 'Bomb', sans-serif;
+            text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+            transition: transform 0.1s ease; /* Smooth transition for press effect */
+        }
+        h1 {
+            color: black;
+            font-size: 45px;
+            font-family: 'Bomb', sans-serif;
+        }
+        button:active {
+            transform: scale(0.95); /* Slightly scale down button when pressed */
+            background-color: yellow; /* Darken the button color to indicate it's pressed */
+        }
+
+        a {
+            text-decoration: none; /* Removes underline from links */
+            display: inline-block; /* Encapsulates the button for alignment */
+        }
+        #head {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            justify-content: space-between; 
+            align-items: center;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url('photo1715024535.jpeg') !important; /* Set the GIF as background */
+            background-size: cover; /* Cover the entire page */
+            background-repeat: no-repeat; /* Do not repeat the background */
+            background-attachment: fixed; /* Keep the background fixed during scrolling */
+        }
+        #media-container {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            width: 100%; /* Adjust based on your layout needs */
+            align-items: center; /* Align children vertically */
+        }
+
+        #media-container img {
+            position: relative; /* Relative position to use z-index */
+            z-index: 2; /* Higher z-index so it overlaps the video */
+            width: 50%; /* Adjust size as necessary */
+            right: 50px; /* Adjust overlap size */
+        }
+
+        #media-container p {
+                font-family: 'Star Wars', sans-serif;
+                color: white;
+                background-color: black;
+                line-height: 1.6; /* Adjust line-height as needed, 1.6 is a common value for good readability */
+                padding: 20px; /* Adds padding inside the paragraph for better spacing around the text */
+                margin: 20px 0; /* Adds vertical margin for spacing outside the paragraph */
+                text-align: justify; /* Justifies the text to both edges for a cleaner look */
+                width: 80%; /* Sets a specific width for the paragraph */
+            }
+            .fade {
+  position: relative;
+  width: 100%;
+  min-height: 60vh;
+  top: -25px;
+  background-image: linear-gradient(0deg, transparent, black 75%);
+  z-index: 1;
+}
+
+#media-container img {
+    position: relative; /* Maintains relative positioning */
+    z-index: 3; /* Ensures it's above the crawl */
+    width: 50%; /* Maintain your sizing */
+    margin-bottom: 100px; /* Adds space below the image before the crawl starts */
+}
+
+
+    </style>
+
+    </head>
+    <body>
+        <header id="head">
+            <a href="https://t.me/burjkhalifasol" style="text-decoration: none;"><button>Telegram</button></a>
+            <a href="https://twitter.com/burjkhalifasol" style="text-decoration: none;"><button>Twitter</button></a>
+            <a href="https://pump.fun" style="text-decoration: none;"><button>Pump</button></a>
+        </header>
+        <h1>Habibi welcome to Burj Khalifa</h1>
+        <img src="size.png" style="magin-top: 10px"/>
+        
+    </body>
+</html>
